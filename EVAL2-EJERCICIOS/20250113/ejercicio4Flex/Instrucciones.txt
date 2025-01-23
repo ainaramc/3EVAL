@@ -1,0 +1,6 @@
+Todos los ítems están centrados en la página horizontalmente, no verticalmente.
+El título está centrado en la página.
+Hay 32px entre el título y los ítems.
+Hay 52px entre cada par de ítems.
+Los ítems están dispuestos horizontalmente en la página.
+Los ítems tienen un máximo de 200px de ancho y el texto centrado que se ajusta al tamaño.

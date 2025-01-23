@@ -1,0 +1,3 @@
+1. El contenedor tiene márgenes izquierdo y derecho dependientes del tamaño de la ventana. Ocupará un 80% del ancho. Como máximo crecerá hasta 900px.
+2. La imagen está flotando a la derecha de los tres primeros párrafos. No flotará a la derecha de la sección subtítulo. Tiene un ancho del 40% del contenedor. Tiene un margen izquierdo de 10px.
+3. El texto está justificado. Los encabezados están centrados.

@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+  font-family: 'Open Sans', sans-serif;
+
+contenedor 1200px ancho máximo, ancho 90%, centrado.

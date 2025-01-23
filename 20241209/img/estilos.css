@@ -1,0 +1,103 @@
+/************************************** Ejercicio 1 *********************************************/
+
+/* Relleno del pie de 25 px */
+
+
+/************************************** Ejercicio 2 *********************************************/
+
+    /* No se piden en el enunciado */
+   
+    input {
+      margin-right: 5px;
+    }
+    h2 {
+      text-align: center;
+      padding:15px;
+    }
+    * {
+      margin: 0;
+    }
+    
+    /* 2c: Poner la imagen de fondo hero */
+    .hero{
+      height: 300px;
+      background-image:url(./pizza.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+
+    }
+
+    /* 2f formulario con ancho de 70% y márgenes izquierdo y derecho en auto */
+    form{
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
+
+    /* 2g campos internos con ancho del 50%, márgenes izquierdo y derecho en auto y relleno de 15px */
+    fieldset:nth-child(2){
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+    }
+    fieldset:nth-child(3){
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+    }
+    fieldset:nth-child(4){
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+    }
+    /* 2h Botón para enviar el formulario con color de fondo verde y texto con font-weight de 800 de color blanco. Los bordes deben de estar redondeados (border-radius: 10px).*/
+    .enviar{
+      background-color: green;
+      font-weight: 800;
+      color: white;
+      border-radius: 10px;
+    }
+    /* 2i Botón para limpiar el formulario con color de fondo rojo y el resto de propiedades igual que el de enviar */
+    .borrar{
+      background-color: red;
+      font-weight: 800;
+      color: white;
+      border-radius: 10px;
+  
+    }
+
+    /* Cuando se pasa el ratón por encima de los botones para enviar o limpiar el formulario deben ponerse en color lightgreen y lightcoral.*/
+
+
+    /************************************** Ejercicio 3 *********************************************/
+    /* No se pide en el enunciado */
+    main {
+      text-align: center;
+    }
+    header{
+      text-align: center;
+    }
+    /* 3c La tabla tiene que tener margen superior e inferior de 20px e izquierdo y derecho en “auto”. El ancho de la tabla debe de ser de un 80%. */
+    table{
+      margin: 20px;
+       margin-bottom: 20px;
+       margin-left: auto;
+       margin-right: auto;
+       width: 80%;
+       border: #ddd;
+       text-align: center;
+    }
+
+    thead{
+      background-color: #f4e87c
+    }
+
+    tr:nth-child(td){
+      color: #FFEEAD;
+    }
+    
+  

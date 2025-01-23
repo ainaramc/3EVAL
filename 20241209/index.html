@@ -1,0 +1,79 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+  <link rel="stylesheet" href="img/estilos.css">
+  <title>Pizzas artesanas</title>
+  <style>
+     body{
+      background-color: #faf3e0;
+     font-family: Arial,sans-serif;
+    }
+ 
+  header{
+    text-align: center;
+    padding: 25px;
+  }    
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pizzas</h1>
+
+    <p>Nuestras pizzas artesanas en tu domicilio en una hora</p>
+  </header>
+
+  <div class="hero"></div>
+
+  <h2>Diseña tu pizza</h2>
+  <!-- Aqui va el formulario -->
+  <form>
+    <fieldset>
+      <legend>Elige la base</legend>
+      <fieldset>
+        <legend>Masa (Elige una,<a href="precios.html">ver precios</a>)</legend>
+        <input type="radio" id="clasica" name="clasica" value="clasica">
+        <label for="html"> Clásica</label> <br> <br>
+        <input type="radio" id="integral" name="integral" value="integral">
+        <label for="html"> Integral</label><br> <br>
+        <input type="radio" id="sin_gluten" name="sin_gluten" value="sin_gluten">
+        <label for="html"> Sin gluten</label>
+        <br>
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Ingredientes (Elige los que quieras)</legend>
+        <input type="checkbox" id="queso" name="queso" value="queso">
+        <label for="html"> Queso mozzarella</label>
+        <br>
+        <br>
+        <input type="checkbox" id="peperoni" name="peperoni" value="peperoni">
+        <label for="html"> Peperoni</label> <br> <br>
+        <input type="checkbox" id="queso" name="champiñones" value="champiñones">
+       <label for="html"> Champiñones</label>  <br> <br>
+      </fieldset>
+      <fieldset>
+      <legend>Número</legend>
+        <label for="pizza">¿Cuántas pizzas (1-6)?</label>
+        <select name="pizza" id="pizza">
+          <option value="value1">1</option>
+          <option value="value2">2</option>
+           <option value="value3">3</option>
+           <option value="value4">4</option>
+           <option value="value5">5</option>
+           <option value="value6">6</option>
+        </select>
+      </fieldset>
+    </fieldset>
+    <br>
+
+    <button type="submit" class="enviar">Envíame el pedido!</button>
+    <button type="reset" class="borrar">Limpiar todo</button>
+  </form>
+ <br>
+<footer>Página creada por Ainara  Méndez</footer>
+</body>
+
+</html>
