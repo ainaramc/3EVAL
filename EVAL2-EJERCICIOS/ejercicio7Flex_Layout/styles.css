@@ -29,14 +29,23 @@ footer {
     background-color: #bd4932;
 }
 
-@media only screen and (max-width: 768px) {
-   header {
+body{
+    height: 100vh;
     display: flex;
-    justify-items: center;
- 
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
+.contenido{
+    display: flex;
+    flex-grow: 1;
+}
 
+
+main{
+    flex-grow: 1;
+}
 /* Usando flex y media queries:
 
    Cuando la resolución horizontal es menor de 768px:
