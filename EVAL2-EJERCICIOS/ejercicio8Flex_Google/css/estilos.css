@@ -67,6 +67,7 @@ align-items:flex-end;
 }
 
 ul{
+    display: flex;
 list-style: none;
 gap: 1;
 margin: 0;
