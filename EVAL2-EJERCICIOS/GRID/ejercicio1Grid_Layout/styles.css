@@ -33,14 +33,14 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 7fr 1fr;
-    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-rows: 1fr 7fr 1fr; 
     padding: 2rem;
     margin: 0;
     padding: 0;
  
 }
 header.item{
-    grid-column-start: 1;
+    grid-column-start: 1; /* Puedes poner grid-template-colum: 1/4 */
     grid-column-end: 4;
 }
 
