@@ -1,0 +1,5 @@
+La imagen de la bombilla encendida está encima de la imagen de la bombilla apagada.
+Inicialmente la bombilla encendida tiene una opacidad de 0.
+Evento mouseover -> la opacidad de la bombilla encendida cambia a 100.
+Evento mouseout -> la opacidad de la bombilla encendida cambia a 0.
+La transición de opacidad de 0 a 100 y viceversa debe ser gradual y tardar 5 segundos en completarse.

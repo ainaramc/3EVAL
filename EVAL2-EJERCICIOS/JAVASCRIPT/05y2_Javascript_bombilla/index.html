@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de javascript</title>
+    <style>
+		* {
+			margin: 0;
+		}
+        body {
+            color:#f5f5f5;
+        }
+        .contenedor {
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height:100vh;
+        }
+        img[src="img/light_bulb_on.png"] {
+            position: absolute;
+            opacity: 0;
+            transition:5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+      <img src="img/light_bulb_off.png">
+      <img src="img/light_bulb_on.png">
+    </div>
+    <script>
+        const apagada = document.querySelector('img[src="img/light_bulb_off.png"]');
+        const encendida = document.querySelector('img[src="img/light_bulb_on.png"]');
+
+        function opacidadApagada (){  
+            encendida.style.opacity = 0;   
+        }
+
+        function opacidadEncendida(){
+            encendida.style.opacity = 1; 
+            
+        }
+        encendida.addEventListener('mouseover',(opacidadEncendida));
+
+        encendida.addEventListener('mouseout', (opacidadApagada)
+        );
+    
+    </script>
+
+</body>
+</html>
