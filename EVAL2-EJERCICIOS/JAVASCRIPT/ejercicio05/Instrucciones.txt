@@ -1,0 +1,1 @@
+Se puede cambiar el atributo de un elemento con el método setAttribute. Por ejemplo, imagen.setAttribute('src', '/img/nuevaimagen.jpg')
