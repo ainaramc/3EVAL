@@ -17,7 +17,11 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+
       /* Modificar los estilos para que el texto y la imagen queden centrados en la página */
+    }
+    div{
+      text-align: center;
     }
   </style>
 </head>
@@ -32,10 +36,7 @@
        Modo oscuro: fondo del body black y texto blanco.
        Modo claro: fondo del body blanco y texto negro.
   */
-  let modoOscuro = false;
   /* Debemos guardar en variables  el texto y la imagen.*/
-
-
   /* En la imagen se debe añadir un event listener que haga lo siguiente,
      controlando con una estructura condicional si el modoOscuro es false/true:
       1) Cambiar la imagen a la opuesta (sol.jpg o luna.png).
@@ -43,7 +44,26 @@
       3) Cambiar el fondo de la página y el color según corresponda.
       4) Modificar el valor de la variable modoOscuro al valor opuesto.
   */
+  let modoOscuro = false;
+  let texto = document.getElementById('texto')
+  let imagen = document.querySelector('img')
 
+  imagen.addEventListener('click',() => {
+    if (modoOscuro == false){
+      imagen.setAttribute('src','img/sol.jpg')
+      texto.style.color = 'white'
+      texto.innerText = 'Pulsa el sol para activar el modo claro'
+      document.body.style.backgroundColor = 'black'
+      modoOscuro = true
+    }
+    else {
+      imagen.setAttribute('src','img/luna.png')
+      texto.style.color = 'black'
+      texto.innerText = 'Pulsa la luna para activar el modo oscuro'
+      document.body.style.backgroundColor = 'white'
+      modoOscuro = false
+    }
+  })
 </script>
 </body>
 </html>
