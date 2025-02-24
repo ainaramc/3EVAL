@@ -20,7 +20,7 @@ formulario.addEventListener('submit', (e) => {
         })
     }
     else {
-        lista.innerText = ''
+        lista.value = ''
     }
 
 
