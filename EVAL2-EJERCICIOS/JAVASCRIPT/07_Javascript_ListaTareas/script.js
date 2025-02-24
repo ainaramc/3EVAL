@@ -1,20 +1,27 @@
-const formulario =  document.querySelector('#form');
+const formulario = document.querySelector('#form');
 const tareas = document.querySelector('ul');
-const input = document.querySelector ('input');
+const input = document.querySelector('input');
 
-formulario.addEventListener('submit', (e) =>{
+formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-        const lista = document.createElement('li')
-        lista.innerText= input.value
-       
-        lista.addEventListener('contextmenu', (e) =>{
+    const lista = document.createElement('li')
+    lista.innerText = input.value
+
+    if (lista.innerText != '') {
+
+        lista.addEventListener('contextmenu', (e) => {
             lista.remove()
         })
         tareas.appendChild(lista)
 
 
-        lista.addEventListener('click', (e) =>{
+        lista.addEventListener('click', (e) => {
             lista.classList.toggle('completada')
         })
+    }
+    else {
+        lista.innerText = ''
+    }
+
 
 })
