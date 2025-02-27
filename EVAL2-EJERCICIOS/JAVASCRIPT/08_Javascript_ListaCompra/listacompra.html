@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shopping list example</title>
+  <style>
+    li {
+      margin-bottom: 10px;
+    }
+
+    li button {
+      font-size: 12px;
+      margin-left: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Lista de la compra</h1>
+
+  <div>
+    <label for="item">Añade un nuevo elemento:</label>
+    <input type="text">
+    <button>Añadir</button>
+  </div>
+
+  <ul>
+    <!-- aqui se deben ir añadiendo dinámicamente los li, por ejemplo:
+		 <li>
+			<span>Leche</span>
+			<button>Delete</button> // Este botón debe de borrar el elemento
+		 </li>
+    </ul>
+    --->
+    <script>
+      const input = document.querySelector('input')
+      const lista = document.querySelector('ul')
+      const button = document.querySelector('button')
+
+      button.addEventListener('click', (e) => {
+
+        const punto = document.createElement('li')
+        punto.innerText = input.value
+        lista.appendChild(punto)
+
+        const newButton = document.createElement('button')
+        newButton.innerText = "Delete"
+
+        punto.appendChild(newButton)
+        newButton.addEventListener('click', () => {
+          lista.removeChild(punto);
+        });
+      }
+      )
+    </script>
+</body>
+
+</html>

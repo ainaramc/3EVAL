@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Imágenes expandidas</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="panel activo" style="background-image: url('img/imagen1.avif')">
+      <h3>Explora el mundo</h3>
+    </div>
+    <div class="panel" style="background-image: url('img/imagen2.avif')">
+      <h3>Bosque</h3>
+    </div>
+    <div class="panel" style="background-image: url('img/imagen3.avif')">
+      <h3>Playa</h3>
+    </div>
+    <div class="panel" style="background-image: url('img/imagen4.avif')">
+      <h3>Ciudad</h3>
+    </div>
+    <div class="panel" style="background-image: url('img/imagen5.avif')">
+      <h3>Montañas</h3>
+    </div>
+  </div>
+
+  <script>
+  const panel =  document.querySelector('.panel')
+  const panel1 =  document.querySelector('.panel:nth-child(2)')
+  const panel2 =  document.querySelector('.panel:nth-child(3)')
+  const panel3 =  document.querySelector('.panel:nth-child(4)')
+  const panel4 =  document.querySelector('.panel:nth-child(5)')
+   
+  panel.addEventListener('click', (e) => {
+      panel.classList.add('activo')
+      panel1.classList.remove('activo')
+      panel2.classList.remove('activo')
+      pane3.classList.remove('activo')
+      panel4.classList.remove('activo')
+   
+  })
+
+  panel1.addEventListener('click', (e) => {
+      panel1.classList.add('activo')
+      panel.classList.remove('activo')
+      panel2.classList.remove('activo')
+      pane3.classList.remove('activo')
+      panel4.classList.remove('activo')
+      panel5.classList.remove('activo')
+  })
+
+  panel2.addEventListener('click', (e) => {
+      panel2.classList.add('activo')
+      panel.classList.remove('activo')
+      panel1.classList.remove('activo')
+      pane3.classList.remove('activo')
+      panel4.classList.remove('activo')
+      panel5.classList.remove('activo')
+  })
+  
+  panel3.addEventListener('click', (e) => {
+      panel3.classList.remove('activo')
+
+      panel3.classList.add('activo')
+  })
+
+  panel4.addEventListener('click', (e) => {
+      panel4.classList.remove('activo')
+
+      panel4.classList.add('activo')
+  })
+  
+  panel5.addEventListener('click', (e) => {
+      panel5.classList.remove('activo')
+
+      panel5.classList.add('activo')
+  })
+
+
+
+</script>
+
+
+</body>
+
+</html>
+

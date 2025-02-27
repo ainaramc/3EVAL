@@ -1,0 +1,42 @@
+/* propiedades flex */
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  height: 90vh;
+  cursor: pointer;
+  transition: all 0.9s ease-in;
+  flex-grow: 0.5;
+/* flex grow */
+}
+
+.panel h3 {
+	margin-left: 12px;
+	color:white;
+	opacity: 0;
+}
+
+.panel.activo h3 {
+	opacity: 1;
+	transition: opacity 1s ease-in;
+}
+
+.panel.activo {
+  display: flex;
+  flex-grow: 1;
+}
+
+.contenedor{
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .panel:nth-child(4){
+    display: none;
+  }
+  .panel:nth-child(5){
+    display:none;
+  }
+}
