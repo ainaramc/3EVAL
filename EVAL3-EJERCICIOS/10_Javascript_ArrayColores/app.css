@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+}
+body {
+	color: black;
+}
+#boxes {
+
+}
+.caja {
+	height: 150px;
+	border: 1px solid white;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+h1 {
+	text-align: center;
+}
