@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<body>
+    <svg id= "caraNormal" viewBox="0 0 862 517" xmlns="http://www.w3.org/2000/svg">
+        <circle class="face" cx="414.5" cy="257.5" r="236.5" fill="#fbc52a"/>
+        <circle class="right-eye" cx="320.48" cy="172" r="37.98" fill="black" stroke="#fff" stroke-miterlimit="10" stroke-width="8"/>
+        <circle class="left-eye" cx="508.52" cy="172" r="37.98" fill = 'black' stroke="#fff" stroke-miterlimit="10" stroke-width="8"/> 
+        <path class="mouth" d="M271,318s21,112,143.5,112S557,318,557,318Z" fill="#fff" />
+        </svg>
+
+        <svg id= "caraVomitando" viewBox="0 0 862 517" xmlns="http://www.w3.org/2000/svg">
+        <circle class="face" cx="414.5" cy="257.5" r="236.5" fill="green"/>
+        <circle class="right-eye" cx="320.48" cy="172" r="37.98" fill="red" stroke="red" stroke-miterlimit="10" stroke-width="8"/>
+        <circle class="left-eye" cx="508.52" cy="172" r="37.98" fill = 'red' stroke="red" stroke-miterlimit="10" stroke-width="8"/> 
+        <line x1="320" y1="350" x2="508" y2="350" stroke ="black" stroke-width="10"/>
+        </svg>
+    <script>
+        const cara = document.getElementById("caraNormal");
+        const vomitona = document.getElementById("caraVomitando");
+        
+        cara.addEventListener("click", () =>{
+            cara.style.display="none";
+            vomitona.style.display = "block";
+
+            setTimeout (()=>{
+                cara.style.display="block";
+                vomitona.style.display ="none";
+            },1000);
+        })
+    </script>
+    
+</body>
+</html>

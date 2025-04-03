@@ -1,0 +1,30 @@
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carrusel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: auto;
+  width: 500px;
+  overflow:hidden;
+ /* Usar la propiedad overflow para esconder las imágenes fuera de la ventana de 500px */
+}
+
+.contenedor-imagenes {
+  display: flex;  
+  transform: translateX(0);
+  /* La propiedad transform se puede usar para mover a izquierda o derecha las imágenes  */
+}
+
+
