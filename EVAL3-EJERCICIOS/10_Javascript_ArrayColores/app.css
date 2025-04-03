@@ -3,13 +3,15 @@
 }
 body {
 	color: black;
+	
 }
 #boxes {
-
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 .caja {
 	height: 150px;
-	border: 1px solid white;
+	border: 1px solid black;
 	color: white;
 	display: flex;
 	justify-content: center;
